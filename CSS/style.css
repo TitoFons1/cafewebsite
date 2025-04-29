@@ -4,6 +4,7 @@
 
     --primario: #784D3C;
     --gris: #e1e1e1;
+    --gris-oscuro: #969696;
     --blanco: #ffffff;
     --negro: #000000;
 }
@@ -26,8 +27,7 @@ body {
 /* Globales */
 
 .contenedor {
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto; 
 }
 
@@ -132,6 +132,10 @@ img {
     color: var(--blanco);
 }
 
+.navegacion__enlace:hover {
+    color:var(--gris-oscuro);
+}
+
 @media (min-width: 768px){
     .contenido-principal{
         display: grid;
@@ -173,10 +177,21 @@ img {
     background-color: var(--negro)
 }
 
+.boton--primario:hover {
+    background-color: var(--primario);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+}
+
 .boton--secundario {
     background-color: var(--primario);
 }
 
+.boton--secundario:hover {
+    background-color: var(--negro);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+}
 .cursos {
     list-style: none;
 }
@@ -190,15 +205,59 @@ img {
     border-bottom: none; 
     margin-bottom: 0; 
 }
-.widget-curso__label {
+.widget-curso__label, 
+.curso__label {
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
 
-.widget-curso__info{
+.widget-curso__info, 
+.curso__info{
     font-weight: 400;
 }
 
-.widget-curso__label, .widget-curso__info {
+.widget-curso__label, 
+.widget-curso__info,
+.curso__label,
+.curso__info {
     font-size: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--negro);
+    padding: 3rem 0;
+    margin-top: 4rem; 
+}
+
+/* SOBRE NOSOTROS */
+
+@media (min-width: 768px){
+
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+}
+
+/* CURSOS PAGE */
+
+.curso {
+    padding: 3rem 0; 
+    border-bottom: 1px solid var(--gris)
+}
+@media (min-width: 768px){
+    .curso {
+        display: grid; 
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    
+}
+
+.curso:last-of-type {
+    border: none; 
 }
