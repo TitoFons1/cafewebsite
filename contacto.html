@@ -32,22 +32,41 @@
         </div>
     </header>
     <main class = "contenedor">
-        <h3 class = "centrar-texto">Entrada de Blog</h3>
-        <div class = "entrada-blog">
-            <div class = "entrada-blog__imagen">
-                <img src="img/blog1.jpg" alt="imagen del blog">
-            </div>
-            <div class = "entrada-blog-texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl purus, fermentum ut leo sed, porttitor cursus leo. Cras sit amet vulputate mauris, eu facilisis nisi. Phasellus in tempor velit. Cras dignissim nulla in euismod condimentum. Curabitur felis lectus, pharetra sed luctus sed, efficitur a neque. Sed hendrerit, velit ut condimentum sodales, nisl odio imperdiet justo, id elementum mi ex et urna. Fusce vel venenatis neque. In quis mauris vel massa mattis pellentesque nec vel ligula. Phasellus condimentum tincidunt nisi.</p>
+        <h3 class = "centrar-texto">Contacto</h3>
 
-                <p>Integer lorem orci, mattis ut dui at, tempor pretium tortor. Duis placerat tempus quam, et cursus eros luctus at. Maecenas in eleifend urna. Vestibulum sed vehicula ex. Fusce bibendum venenatis augue, et pretium orci molestie nec. Vivamus consectetur ex elit, a tempor elit sollicitudin vitae. Praesent ut sapien eu justo viverra semper. Nunc sit amet est aliquam, facilisis neque in, mattis quam.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl purus, fermentum ut leo sed, porttitor cursus leo. Cras sit amet vulputate mauris, eu facilisis nisi. Phasellus in tempor velit. Cras dignissim nulla in euismod condimentum. Curabitur felis lectus, pharetra sed luctus sed, efficitur a neque. Sed hendrerit, velit ut condimentum sodales, nisl odio imperdiet justo, id elementum mi ex et urna. Fusce vel venenatis neque. In quis mauris vel massa mattis pellentesque nec vel ligula. Phasellus condimentum tincidunt nisi.</p>
+        <div class = "contacto-bg"></div>
 
-                <p>Integer lorem orci, mattis ut dui at, tempor pretium tortor. Duis placerat tempus quam, et cursus eros luctus at. Maecenas in eleifend urna. Vestibulum sed vehicula ex. Fusce bibendum venenatis augue, et pretium orci molestie nec. Vivamus consectetur ex elit, a tempor elit sollicitudin vitae. Praesent ut sapien eu justo viverra semper. Nunc sit amet est aliquam, facilisis neque in, mattis quam.
-                </p>
+        <form class = "formulario">
+            <div class = "campo">
+                <label class = "campo__label" for="nombre">Nombre</label>
+                <input
+                    class = "campo__field" 
+                    type="text" 
+                    placeholder = "Tu Nombre" 
+                    id="nombre"
+                >
             </div>
-        </div>
+            <div class = "campo">
+                <label class = "campo__label" for="email">E-mail</label>
+                <input
+                    class = "campo__field" 
+                    type="email" 
+                    placeholder = "Tu E-mail" 
+                    id="email"
+                >
+            </div>
+            <div class = "campo">
+                <label class = "campo__label" for="mensaje">Mensaje</label>
+                <textarea class = "campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+            <div class = "campo">
+                <input
+                    type="submit" 
+                    value="Enviar" 
+                    class = "boton boton--primario boton--formulario"
+                >
+            </div>
+        </form>
     </main>
     <footer class = "footer">
         <div class = "contenedor">
